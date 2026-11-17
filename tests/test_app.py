@@ -1,5 +1,13 @@
+import os
+import sys
 import unittest
-from src.app import add, subtract
+
+sys.path.insert(
+    0,
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src"))
+)
+
+from app import add, subtract
 
 class TestApp(unittest.TestCase):
 
